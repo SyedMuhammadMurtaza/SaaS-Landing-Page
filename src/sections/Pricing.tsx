@@ -132,7 +132,7 @@ export const Pricing = () => {
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature,index) => (
                     <li key={index} className="text-sm flex items-center gap-4">
-                      <CheckIcon className="h-6 w-6" />
+                      <CheckIcon key={index} className="h-6 w-6" />
                       <span>{feature}</span>
                     </li>
                   ))}
